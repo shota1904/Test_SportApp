@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #FFFFFF;
+	transition: all .5s;
+}
+.sidebar header{
+	font-size: 22px;
+	color: black;
+	text-align: center; 
+	line-height: 70px;
+	user-select: none;
+	background: #37A8FF;
+}
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	color: black;
+	padding-left: 20%;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid black;
+}
+#check{
+	display: none;
+}
+label #btn, label #cancel{
+	position: absolute;
+	background: #008F38;
+	border-radius: 4px;
+}
+label #btn{
+	left: 20px;
+	top: 20px;
+	font-size: 35px;
+	color: white;
+	padding: 6px 12px;
+	transition: all .5s;
+}
+
+label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top: 12px;
+	font-size: 30px;
+	padding: 4px 9px;
+	transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+	left: 0;
+	top: 0;
+}
+#check:checked ~ label #btn{
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+#check:checked ~ label #cancel{
+	left: 195px;
+}
+.logo{	
+	width: 100%;
+	height: auto;
+}
+.active{
+	background: #BEBEBE
+}
+.selection{
+	background: #37A8FF;
+}
+.selection h1{
+	color: white;
+}
+.selection ul li{
+	padding: 5px;
+}
+.selection ul a{
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 80%;
+	line-height: 65px;
+	color: black;
+	box-sizing: border-box;
+	border: 1px solid black;
+	background: white;
+}
+.back{
+	position: absolute;
+	background-color: #37A8FF;
+	color: white;
+	left: 5%;
+	top: 5%;
+}
+.overview ul a{
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	width: 40%;
+	line-height: 65px;
+	color: black;
+	background-color: #BEBEBE;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.information{
+	display: flex;
+	box-sizing: border-box;
+	border: 1px solid black;
+	height: 60%;
+	width: 40%;
+}
