@@ -96,7 +96,7 @@ label #cancel{
 	height: 13vw;
 	padding: 1vw;   
 }
-.selection ul a{
+.selection ul a, .button{
 	display: flex;
 	justify-content: center;
 	height: 100%;
@@ -108,6 +108,9 @@ label #cancel{
 	background: white;
 	align-items: center;
 }
+.button{
+	padding: 2vw;
+}
 .back{
 	position: absolute;
 	background-color: #37A8FF;
@@ -117,23 +120,32 @@ label #cancel{
 	height: 10vw;
 	width: 10vw;
 }
+.overview{
+	padding: 2vw;
+}
 .overview ul a{
 	display: flex;
 	justify-content: center;
 	height: 100%;
-	width: 40%;
+	width: 100%;
 	line-height: 65px;
 	color: black;
 	background-color: #BEBEBE;
 	box-sizing: border-box;
 	border: 1px solid black;
+	text-align: center;
+}
+.overview ul{
+	padding-top: 2vw;
+	padding-bottom: 2vw;
 }
 .information{
 	display: flex;
 	box-sizing: border-box;
 	border: 1px solid black;
 	height: 60%;
-	width: 40%;
+	width: 100%;
+	padding: 1vw;
 }
 .training{
 	text-align: center;
