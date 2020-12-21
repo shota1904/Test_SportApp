@@ -13,7 +13,7 @@ a{
 .sidebar{
 	position: fixed;
 	top: 0;
-	left: -35vw;
+	left: -40vw;
 	width: 40vw;
 	height: 100%;
 	background: #FFFFFF;
@@ -58,8 +58,8 @@ label #btn{
 label #cancel{
 	z-index: 1111;
 	left: -195px;
-	top: 12px;
-	font-size: 30px;
+	top: 15px;
+	font-size: 6vw;
 	padding: 4px 9px;
 	transition: all .5s ease;
 }
@@ -73,7 +73,7 @@ label #cancel{
 	pointer-events: none;
 }
 #check:checked ~ label #cancel{
-	left: 195px;
+	left: 33vw;
 }
 .logo{	
 	width: 100%;
