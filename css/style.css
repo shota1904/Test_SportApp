@@ -100,8 +100,8 @@ label #cancel{
 	position: absolute;
 	background-color: #37A8FF;
 	color: white;
-	left: 5%;
-	top: 5%;
+	left: 35px;
+	top: 35px;
 	height: 10vw;
 	width: 10vw;
 }
