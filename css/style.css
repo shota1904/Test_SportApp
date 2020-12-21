@@ -22,6 +22,7 @@ a{
 	border: 1px solid black;
 }
 .sidebar header{
+	padding-left: 2vw;
 	font-size: 8vw;
 	color: black;
 	/* text-align: center; */
