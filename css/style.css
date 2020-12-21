@@ -94,18 +94,19 @@ label #cancel{
 }
 .selection ul li{
 	height: 13vw;
-	padding: 1vw;
+	padding: 1vw;   
 }
 .selection ul a{
 	display: flex;
 	justify-content: center;
 	height: 100%;
-	width: 80%;
+	width: 100%;
 	line-height: 65px;
 	color: black;
 	box-sizing: border-box;
 	border: 1px solid black;
 	background: white;
+	align-items: center;
 }
 .back{
 	position: absolute;
