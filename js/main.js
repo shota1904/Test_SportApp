@@ -20,10 +20,6 @@ function startTimer(duration, display) {
         if (--timer < 0) {
             timer = 0;
 			document.getElementById('time').innerHTML = "Fertig!";
-			//creates costant of "start"-button
-			const startBtn = document.getElementById('startTimer');
-			//disables "start"-button
-			startBtn.disabled = true;
         }
     }, 1000);
 }

@@ -133,3 +133,7 @@ label #cancel{
 #time{
 	font-size: 25vw;
 }
+#startTimer{
+	height: 10vw;
+	width: 60vw;
+}

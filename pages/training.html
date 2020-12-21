@@ -18,8 +18,10 @@
 	</div>
 	<body>
 	<!-- Display the countdown timer in an element -->
-    <div class="timer"><span id="time">00:30</span></div>
-	<button onclick="thirtySecondsTimer()" id="startTimer">Starten</button>
+    <div class="timer"><span id="time">00:30</span>
+	<!-- Starts timer & disables button by clicking -->
+	<button onclick="thirtySecondsTimer(); this.disabled=true;" id="startTimer">Starten</button>
+		</div>
 	</body>
 	<script type="text/javascript" src="../js/main.js"></script>
 </body>
