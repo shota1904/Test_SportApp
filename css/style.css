@@ -101,7 +101,8 @@ label #cancel{
 	background-color: #37A8FF;
 	color: white;
 	left: 5%;
-	top: 5%;
+	top: 6.5%;
+	padding: 5vw;
 }
 .overview ul a{
 	display: flex;
