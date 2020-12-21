@@ -121,3 +121,15 @@ label #cancel{
 	height: 60%;
 	width: 40%;
 }
+.training{
+	text-align: center;
+}
+.training h1{
+	font-size: 10vw;
+}
+.timer{
+	text-align: center;
+}
+#time{
+	font-size: 25vw;
+}
