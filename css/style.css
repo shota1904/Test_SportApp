@@ -104,20 +104,21 @@ label #btn, label #cancel{
 label #btn{
 	left: 20px;
 	top: 20px;
-	font-size: 35px;
 	color: white;
-	padding: 6px 12px;
+	padding: 10px;
 	transition: all .5s;
 }
-
 label #cancel{
 	position: fixed;
 	z-index: 1111;
 	left: -195px;
 	top: 15px;
-	font-size: 6vw;
-	padding: 4px 9px;
+	padding: 10px;
 	transition: all .5s ease;
+}
+i img{
+	height: 32px;
+	width: 32px;
 }
 #check:checked ~ .sidebar{
 	left: 0;
@@ -130,9 +131,6 @@ label #cancel{
 }
 #check:checked ~ label #cancel{
 	left: 33vw;
-}
-#cancel:hover{
-	font-size: 8vw;
 }
 .logo{	
 	width: 100%;
