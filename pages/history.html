@@ -6,26 +6,34 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<div id="banner">
-		<a>
-			<img class="logo" src="../pictures/ksh_logo.png" alt="ksh_logo">
-		</a>
-	</div>
-	<input type="checkbox" id="check">
-	<label for="check">
-		<i id ="btn">pi</i>
-		<i id ="cancel">x</i>
-	</label>
-	<div class="sidebar">
-	  <header>Menü</header>
-		<ul>
-			<li><a href="homee.html">Trainingsplan</a></li>
-			<li><a class="active" href="history.html">Bericht</a></li>
-			<li><a href="admin.html">Admin</a></li>
-			<li><a href="impressum.html">Impressum</a></li>
-		</ul>
-	</div>
-	<h1>History</h1>
-
+	<main>
+		<!-- KSH-logo als Banner -->
+		<div id="banner">
+			<a>
+				<img class="logo" src="../pictures/ksh_logo.png" alt="ksh_logo">
+			</a>
+		</div>
+		<!-- Navigationsleiste -->
+		<input type="checkbox" id="check">
+		<label for="check">
+			<i id ="btn"><img src="../pictures/icon_menu.png"></i>
+			<i id ="cancel"><img src="../pictures/icon_cancel.png"></i>
+		</label>
+		<div class="sidebar">
+		  <header>Menü</header>
+			<ul>
+				<li><a href="home.php">Trainingsplan</a></li>
+				<li><a class="active" href="history.html">History</a></li>
+				<li><a href="admin.html">Admin</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="logout.php">Abmelden</a></li>
+			</ul>
+		</div>
+		<h1>History</h1>
+	</main>
+	<footer>
+		<a href="../pages/impressum.html">Impressum</a></br>
+		<a>Damian Bühler, Patrick Höscheler, Shota Takahira</a>
+	</footer>
 </body>
 </html>

@@ -5,6 +5,13 @@
 	text-decoration: none;
 	font-family:"Roboto", arial
 }
+/* Setzt das "main" auf die Höhe des Bildschirm, damit "footer nicht im Bild ist"*/
+main{
+	min-height: calc(100vh);
+}
+footer{
+	background-color: #BEBEBE;
+}
 #banner{
 	background-color: #37A8FF;
 }
@@ -20,12 +27,13 @@
 	color: white;
 	background: #37A8FF;
 }
-#Uname{
+#login ul{
 	padding-top: 25vw;
 }
 #Uname img{
 	height: auto;
 }
+/* Hover-Effekt für Login-Button */
 #log:hover{
 	background-color: #005CA3;
 }
@@ -60,10 +68,12 @@ h1{
 a{
 	font-size: 5vw;
 }
+/* Style für Navigationsleiste */
+/* Navigationsleiste ist nicht im Bild, solange sie nicht aufgerufen wird */
 .sidebar{
 	position: fixed;
 	top: 0;
-	left: -40vw;
+	left: -50vw;
 	width: 40vw;
 	height: 100%;
 	background: #FFFFFF;
@@ -74,7 +84,6 @@ a{
 	padding-left: 2vw;
 	font-size: 8vw;
 	color: black;
-	/* text-align: center; */
 	line-height: 15vw;
 	user-select: none;
 	background: #37A8FF;
@@ -98,7 +107,7 @@ a{
 }
 label #btn, label #cancel{
 	position: absolute;
-	background: #008F38;
+	background: #FFFFFF;
 	border-radius: 4px;
 }
 label #btn{
@@ -176,8 +185,14 @@ i img{
 	height: 10vw;
 	width: 10vw;
 }
+.back{
+	color: #000000;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	transition: all .5s;
+}
 .back:hover{
-	color: #0075D0;
+	background-color: #BEBEBE;
 }
 .overview{
 	padding: 2vw;
@@ -217,13 +232,13 @@ i img{
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
-.timer{
+.timer, .amount_exercise{
 	text-align: center;
 }
-#time{
+#time, #amount{
 	font-size: 25vw;
 }
-#startTimer, #nextExercise{
+#startTimer, #nextExercise, #finishExercise{
 	font-size: 5vw;
 	height: 10vw;
 	width: 60vw;

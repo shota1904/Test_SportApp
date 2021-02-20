@@ -44,4 +44,20 @@
 		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
 	</footer>
 </body>
+
+
+	
+<?php
+/*
+session_start();
+if($_SESSION['email']){
+	echo "Wilkommen zurück " . $_SESSION["email"];
+} else {
+	header ("location:../login.php");
+}
+*/
+?>
+
+
+	
 </html>

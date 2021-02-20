@@ -6,30 +6,32 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<div id="banner">
-		<a>
-			<img class="logo" src="../pictures/ksh_logo.png" alt="ksh_logo">
-		</a>
-	</div>
-	<nav>
+		<main>
+		<!-- KSH-logo als Banner -->
+		<div id="banner">
+			<a>
+				<img class="logo" src="../pictures/ksh_logo.png" alt="ksh_logo">
+			</a>
+		</div>
+		<!-- Navigationsleiste -->
 		<input type="checkbox" id="check">
 		<label for="check">
 			<i id ="btn"><img src="../pictures/icon_menu.png"></i>
 			<i id ="cancel"><img src="../pictures/icon_cancel.png"></i>
 		</label>
 		<div class="sidebar">
-		  <header>Menü</header>
+			<header>Menü</header>
 			<ul>
-				<li><a href="homee.html">Trainingsplan</a></li>
-				<li><a href="history.html">Bericht</a></li>
+				<li><a href="home.php">Trainingsplan</a></li>
+				<li><a href="history.html">History</a></li>
 				<li><a href="admin.html">Admin</a></li>
 				<li><a class="active" href="impressum.html">Impressum</a></li>
+				<li><a href="logout.php">Abmelden</a></li>
 			</ul>
 		</div>
-	</nav>
+		<h1>Admin</h1>
+		<p>Diese Applikation ist nur für die Schüler der Kantonsschule Hottingen verfügbar.</p>
+		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
+	</main>
 </body>
-<footer>
-	<a href="../pages/impressum.html">Impressum</a>
-	<a>Damian Bühler, Patrick Höscheler, Shota Takahira</a>
-</footer>
 </html>
