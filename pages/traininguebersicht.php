@@ -16,13 +16,20 @@
 	<button onclick="goBack()" class="back"><img src="../pictures/icon_back.png"></button>
 	<div class="overview">
 		<a class="information">Dauer • Anzahl Trainings</a>
-		<ul>
-			<li><a>Hampelmann<br>Dauer</a></li>
-			<li><a>Bauchpresse<br>Dauer</a></li>
-			<li><a>Russische Drehung<br>Dauer</a></li>
-			<li><a>Fersenschlag<br>Dauer</a></li>
-		</ul>
-		<a class="button" href="training.html">Training beginnen</a>
+		<?php
+		include("datenbank.php");
+		$area = $_GET["area"];
+		$typ = $_GET["typ"];
+		$intensitaet = $_GET["intensitaet"];
+		
+		$result = look_up_training($area, $typ);
+		echo "<ul>";
+		foreach($result as $uebung){
+			echo "<li>" . $uebung["name"] . "</li>";
+		}
+		echo "</ul>";
+		echo "<a class=\"button\" href=\"training.php?area=" . $area . "&typ=" . $typ ."&intensitaet=" . $intensitaet . "\">Training beginnen</a>";
+		?>
 	</div>
 	 <script type="text/javascript" src="../js/main.js"></script>
 </body>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+require("verify_logged_in.php");
+verify_logged_in();
+?>
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
@@ -18,9 +22,15 @@
 	<div class="selection">
 		<h1>Intensität auswählen</h1>
 		<ul>
-			<li><a href="traininguebersicht.html">Leicht</a></li>
-			<li><a href="traininguebersicht.html">Mittel</a></li>
-			<li><a href="traininguebersicht.html">Schwer</a></li>
+			<?php
+			$area = $_GET["area"];
+			$typ = $_GET["typ"];
+				
+			echo "<li><a href=\"traininguebersicht.php?typ=" . $typ . "&intensitaet=leicht&area=" . $area . "\">Leicht</a></li>";
+			echo "<li><a href=\"traininguebersicht.php?typ=" . $typ . "&intensitaet=mittel&area=" . $area . "\">Mittel</a></li>";
+			echo "<li><a href=\"traininguebersicht.php?typ=" . $typ . "&intensitaet=schwer&area=" . $area . "\">Schwer</a></li>";
+			
+			?>
 		</ul>
 	</div>
 	<script type="text/javascript" src="../js/main.js"></script>

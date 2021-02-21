@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
+<?php
+verify_logged_in();
+?>
 <head>
 	<meta charset="UTF-8">
 	<title>Trainingstyp Auswahl</title>
@@ -23,8 +26,8 @@
 			<header>Menü</header>
 			<ul>
 				<li><a href="home.php">Trainingsplan</a></li>
-				<li><a href="history.html">History</a></li>
-				<li><a href="admin.html">Admin</a></li>
+				<li><a href="history.php">History</a></li>
+				<li><a href="admin.php">Admin</a></li>
 				<li><a class="active" href="impressum.html">Impressum</a></li>
 				<li><a href="logout.php">Abmelden</a></li>
 			</ul>

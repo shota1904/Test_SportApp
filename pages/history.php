@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
+<?php
+require("verify_logged_in.php");
+verify_logged_in();
+?>
 <head>
 	<meta charset="UTF-8">
 	<title>Verlauf</title>
@@ -23,16 +27,16 @@
 		  <header>Menü</header>
 			<ul>
 				<li><a href="home.php">Trainingsplan</a></li>
-				<li><a class="active" href="history.html">History</a></li>
-				<li><a href="admin.html">Admin</a></li>
-				<li><a href="impressum.html">Impressum</a></li>
+				<li><a class="active" href="history.php">History</a></li>
+				<li><a href="admin.php">Admin</a></li>
+				<li><a href="impressum.php">Impressum</a></li>
 				<li><a href="logout.php">Abmelden</a></li>
 			</ul>
 		</div>
 		<h1>History</h1>
 	</main>
 	<footer>
-		<a href="../pages/impressum.html">Impressum</a></br>
+		<a href="impressum.php">Impressum</a></br>
 		<a>Damian Bühler, Patrick Höscheler, Shota Takahira</a>
 	</footer>
 </body>
