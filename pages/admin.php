@@ -32,6 +32,8 @@ verify_logged_in();
 			<li><a href="logout.php">Abmelden</a></li>
 		</ul>
 	</div>
-	<h1>Admin</h1>
+	<main>
+		<h1>Admin</h1>
+	</main>
 </body>
 </html>

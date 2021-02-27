@@ -10,7 +10,14 @@ main{
 	min-height: calc(100vh);
 }
 footer{
+	padding: 2%;
 	background-color: #BEBEBE;
+}
+footer a{
+	color: darkblue;
+}
+footer p{
+	font-size: 20px;
 }
 #banner{
 	background-color: #37A8FF;
@@ -21,23 +28,23 @@ footer{
 	justify-content: center;
 	padding-bottom: 2vw;
 }
-#log{
+.log_button{
 	border: none;
 	font-size: 5vw;
 	color: white;
 	background: #37A8FF;
 }
-#login ul{
+form ul{
 	padding-top: 25vw;
 }
 #Uname img{
 	height: auto;
 }
 /* Hover-Effekt für Login-Button */
-#log:hover{
+.log_button:hover{
 	background-color: #005CA3;
 }
-#login_userinput ul li{
+.userinput ul li{
 	display: flex;
 	justify-content: center;
 	padding: 1vw;
@@ -170,9 +177,6 @@ i img{
 	background: white;
 	align-items: center;
 }
-.button{
-	padding: 2vw;
-}
 .button:hover, .selection ul a:hover{
 	background-color: #BEBEBE;
 }
@@ -197,7 +201,7 @@ i img{
 .overview{
 	padding: 2vw;
 }
-.overview ul a{
+.overview a{
 	display: flex;
 	justify-content: center;
 	height: 100%;
@@ -208,6 +212,8 @@ i img{
 	box-sizing: border-box;
 	border: 1px solid black;
 	text-align: center;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
 }
 .overview ul{
 	padding-top: 2vw;
@@ -238,8 +244,21 @@ i img{
 #time, #amount{
 	font-size: 25vw;
 }
-#startTimer, #nextExercise, #finishExercise{
+#startTimer, .nextExercise, #finishedExercise{
 	font-size: 5vw;
 	height: 10vw;
 	width: 60vw;
+	padding: 5px;
+}
+#create_account{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.caption{
+	padding: 0% 2%;
+}
+.center{
+	padding: 2% 0%;
+	justify-content: center;
+	text-align: center;
 }

@@ -19,16 +19,24 @@ verify_logged_in();
 	<!-- Zurück-Button -->
 	<button onclick="goBack()" class="back"><img src="../pictures/icon_back.png"></button>
 	<!-- Auswahl Muskelgruppe -->
-	<div class="selection">
-		<h1>Trainingsplan auswählen</h1>
-		<ul>
-			<li><a href="intensitaet.php?typ=kraft&area=bauchmuskeln">Bauchmuskeln</a></li>
-			<li><a href="intensitaet.php?typ=kraft&area=brust">Brust</a></li>
-			<li><a href="intensitaet.php?typ=kraft&area=arm">Arm</a></li>
-			<li><a href="intensitaet.php?typ=kraft&area=bein">Bein</a></li>
-			<li><a href="intensitaet.php?typ=kraft&area=schultern_ruecken">Schultern & Rücken</a></li>
-		</ul>
-	</div>
+	<main>
+		<div class="selection">
+			<div class="caption">
+				<h1>Bereich auswählen</h1>
+			</div>
+			<ul>
+				<li><a href="intensitaet.php?typ=kraft&area=bauchmuskeln">Bauchmuskeln</a></li>
+				<li><a href="intensitaet.php?typ=kraft&area=brust">Brust</a></li>
+				<li><a href="intensitaet.php?typ=kraft&area=arm">Arm</a></li>
+				<li><a href="intensitaet.php?typ=kraft&area=bein">Bein</a></li>
+				<li><a href="intensitaet.php?typ=kraft&area=schultern_ruecken">Schultern & Rücken</a></li>
+			</ul>
+		</div>
+	</main>
+	<footer>
+		<a href="impressum.php">Impressum</a>
+		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
+	</footer>
 	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

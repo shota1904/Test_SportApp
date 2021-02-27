@@ -27,7 +27,6 @@ verify_logged_in();
 			<ul>
 				<li><a class="active" href="homee.html">Trainingsplan</a></li>
 				<li><a href="history.php">History</a></li>
-				<li><a href="admin.php">Admin</a></li>
 				<li><a href="impressum.php">Impressum</a></li>
 				<li><a href="logout.php">Abmelden</a></li>
 			</ul>
@@ -35,12 +34,15 @@ verify_logged_in();
 	<main>
 		<!-- Auswahl Trainingsart -->
 		<div class="selection">
-			<h1>Trainingsplan auswählen</h1>
+			<div class="caption">
+				<h1>Trainingsplan auswählen</h1>
+			</div>
 			<ul>
 			
 				<li><a class="button" href="krafttraining.php">Kraft</a></li>
 				<li><a class="button" href="ausdauertraining.html">Ausdauer</a></li>
 				<li><a class="button" href="mobilitaetstraining.php">Mobilität</a></li>
+				<li><a class="button" href="traininguebersicht.php?area=bein&typ=sand&intensitaet=mittel">Sand</a></li>
 			</ul>
 		</div>
 	</main>

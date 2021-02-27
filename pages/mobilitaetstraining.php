@@ -10,5 +10,12 @@ verify_logged_in();
 </head>
 
 <body>
+	<main>
+	
+	</main>
+	<footer>
+		<a href="impressum.php">Impressum</a>
+		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
+	</footer>
 </body>
 </html>
