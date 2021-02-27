@@ -40,7 +40,7 @@ verify_logged_in();
 			$result = look_up_history();
 			echo "<ul>";
 			foreach($result as $uebung){
-				echo "<li><a>" . look_up_uebung($uebung["uebungen_fk"])["name"] . "<br>" . $uebung["intensitaet"] . "<br>" . $uebung["datum"] . "</a></li>";
+				echo "<li><a>" . $uebung["datum"] . "<br>" . look_up_uebung($uebung["uebungen_fk"])["name"] . ": " . $uebung["intensitaet"] . "</a></li>";
 			}
 			echo "</ul>";
 			?>
@@ -48,7 +48,7 @@ verify_logged_in();
 	</main>
 	<footer>
 		<a href="impressum.php">Impressum</a></br>
-		<a>Damian Bühler, Patrick Höscheler, Shota Takahira</a>
+		<p>Damian Bühler, Patrick Höscheler, Shota Takahira</p>
 	</footer>
 </body>
 </html>

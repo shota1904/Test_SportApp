@@ -34,7 +34,7 @@ verify_logged_in();
 		}
 		//HTML-Code, welcher in der Datenbank unter Beschreibung gespeichert ist, wird ausgegeben
 		echo $result[$index]["beschreibung"];
-		echo "<div class=\"amount_exercise\"> <p id=\"amount\">" . $result[$index][$intensitaet_str] . "x</p> </div>";
+		echo "<div class=\"amount_exercise\"> <p id=\"amount\">" . $result[$index][$intensitaet_str] . "</p> </div>";
 			
 		//Wenn es keine weiteren Übungen mehr hat wird das Training beendet
 		if ($index+1 > count($result)){
