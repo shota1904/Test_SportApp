@@ -33,9 +33,22 @@ verify_logged_in();
 			$index = 0;
 		}
 		//HTML-Code, welcher in der Datenbank unter Beschreibung gespeichert ist, wird ausgegeben
+		echo "<div class=\"center\"><h1> " . $result[$index]["name"] . "</h1></div>";
 		echo $result[$index]["beschreibung"];
-		echo "<div class=\"amount_exercise\"> <p id=\"amount\">" . $result[$index][$intensitaet_str] . "</p> </div>";
-			
+		if ($result[$index]["zeit"] == 1){
+			if ($result[$index][$intensitaet_str] == 30){
+				echo "<div class=\"timer\"> <span id=\"time\">00:30</span> <button onclick=\"thirtySecondsTimer(); this.disabled=true;\" id=\"startTimer\">Starten</button> </div>";
+			} else if ($result[$index][$intensitaet_str] == 20){
+				echo "<div class=\"timer\"> <span id=\"time\">00:20</span> <button onclick=\"twentySecondsTimer(); this.disabled=true;\" id=\"startTimer\">Starten</button> </div>";
+			} else if ($result[$index][$intensitaet_str] == 60){
+				echo "<div class=\"timer\"> <span id=\"time\">01:00</span> <button onclick=\"sixtySecondsTimer(); this.disabled=true;\" id=\"startTimer\">Starten</button> </div>";
+			}			
+			else {
+				echo "<div class=\"amount_exercise\"> <p id=\"amount\">" . $result[$index][$intensitaet_str] . "s</p> </div>";
+			}
+		} else{
+			echo "<div class=\"amount_exercise\"> <p id=\"amount\">" . $result[$index][$intensitaet_str] . "x</p> </div>";
+		}
 		//Wenn es keine weiteren Übungen mehr hat wird das Training beendet
 		if ($index+1 > count($result)){
 			header ("location:training_beendet.php?area=" . $area . "&typ=" . $typ ."&intensitaet=" . $intensitaet);
@@ -46,7 +59,6 @@ verify_logged_in();
 	?>
 	</main>
 	<footer>
-		<a href="impressum.php">Impressum</a>
 		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
 	</footer>
 	<script type="text/javascript" src="../js/main.js"></script>

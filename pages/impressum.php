@@ -32,9 +32,20 @@ verify_logged_in();
 		</ul>
 	</div>
 	<main>
-		<h1>Admin</h1>
-		<p>Diese Applikation ist nur für die Schüler der Kantonsschule Hottingen verfügbar.</p>
-		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
+		<div class="admin">
+			<h1 class="caption" style="color: #FFFFFF">Admin</h1>
+			<div class="center_content">
+				<div class="content">
+					<h3>Urheberrecht</h3>
+					<p>Alle von uns zur Verfügung gestellten Inhalte und Bilder auf dieser Website gehören der Kantonsschule Hottingen. Vervielfältigung, Veränderung, Verbreitung und jegliche Form der Verwertung außerhalb der Grenzen des Urheberrechtes sind untersagt. Das Herunterladen oder Kopieren dieser Seiten ist ausnahmslos nur für den privaten, nicht kommerziellen Gebrauch erlaubt.</p>
+					<h3>Haftung</h3>
+					<p>Die Ersteller dieser Website und die Kantonsschule Hottingen haftet für keinerlei Verletzungen, welche beim Ausüben dieser Übungen auftreten können. Der Konsument haftet für seine Taten allein.</p>
+					<h3>Erstellung</h3>
+					<p>Diese Website wurde von Damian Bühler, Patrick Höscheler und Shota Takahira für die Kantonsschule Hottingen gefertigt.</p>
+					<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>

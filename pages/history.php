@@ -32,16 +32,20 @@ verify_logged_in();
 		</ul>
 	</div>
 	<main>
-		<h1>History</h1>
+		<!-- Zeigt die bereits durchgeführten Übungen an -->
+		<h1 class="caption">History</h1>
 		<div class="overview">
 			<?php
 			include("datenbank.php");
 
 			$result = look_up_history();
+			//erstellt eine "unordered list"
 			echo "<ul>";
+			//Fügt die Trainingsnamen und die Intensität der Trainings in die "ul" ein
 			foreach($result as $uebung){
 				echo "<li><a>" . $uebung["datum"] . "<br>" . look_up_uebung($uebung["uebungen_fk"])["name"] . ": " . $uebung["intensitaet"] . "</a></li>";
 			}
+			//schliesst die "ul"
 			echo "</ul>";
 			?>
 		</div>

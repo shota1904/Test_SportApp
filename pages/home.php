@@ -25,7 +25,7 @@ verify_logged_in();
 		<div class="sidebar">
 		  <header>Menü</header>
 			<ul>
-				<li><a class="active" href="homee.html">Trainingsplan</a></li>
+				<li><a class="active" href="home.php">Trainingsplan</a></li>
 				<li><a href="history.php">History</a></li>
 				<li><a href="impressum.php">Impressum</a></li>
 				<li><a href="logout.php">Abmelden</a></li>
@@ -38,11 +38,10 @@ verify_logged_in();
 				<h1>Trainingsplan auswählen</h1>
 			</div>
 			<ul>
-			
 				<li><a class="button" href="krafttraining.php">Kraft</a></li>
 				<li><a class="button" href="ausdauertraining.html">Ausdauer</a></li>
 				<li><a class="button" href="mobilitaetstraining.php">Mobilität</a></li>
-				<li><a class="button" href="traininguebersicht.php?area=bein&typ=sand&intensitaet=mittel">Sand</a></li>
+				<li><a class="button" href="traininguebersicht.php?area=sand&typ=sand&intensitaet=mittel">Sand</a></li>
 			</ul>
 		</div>
 	</main>

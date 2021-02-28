@@ -1,10 +1,9 @@
-//function for the "back-Button"
+//Funktion für den "back-Button"
 function goBack(){
 				window.history.back();
 			}
 
-
-//function for timer
+//Funktion für den Timer
 function startTimer(duration, display) {
 	var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -16,17 +15,31 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
-		//if timer ends
+		//Wenn der Timer endet
         if (--timer < 0) {
+			//setze Timer auf 0
             timer = 0;
+			//ersetze den Timer durch "Fertig!"
 			document.getElementById('time').innerHTML = "Fertig!";
         }
     }, 1000);
 }
 
-//sets 30 seconds for timer
+//setzt 30 Sekunden für den Timer
 function thirtySecondsTimer() {
     var thirtySeconds = 30,
         display = document.querySelector('#time');
     startTimer(thirtySeconds, display);
+}
+//setzt 20 Sekunden für den Timer
+function twentySecondsTimer() {  
+    var twentySeconds = 20,
+        display = document.querySelector('#time');
+    startTimer(twentySeconds, display);
+}
+//setzt 60 Sekunden für den Timer
+function sixtySecondsTimer() {
+    var sixtySeconds = 60,
+        display = document.querySelector('#time');
+    startTimer(sixtySeconds, display);
 }

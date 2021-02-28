@@ -10,10 +10,11 @@ if(isset($_POST["submit"])){
 	$connection = new mysqli("127.0.0.1", "root", "WhateverPassword", "sportapp");  //Verbindung zum SQL Server
 	$result = mysqli_query($connection, "SELECT username, password FROM `login` WHERE username = '$name'");
 	$user = mysqli_fetch_assoc($result);
+	//Überprüft, ob der Username schon vergeben ist
 	if (!$user){
-		//Username ist frei
+		//Überprüft, ob die Passwörter übereinstimmen
 		if($_POST["pwd1"] == $_POST["pwd2"]){
-			//Passwörter stimmen überein
+			//Eingaben werden in die Datenbank eingetragen
 			$result = insert_user_details($name, $pwd1, $pwd2);
 			header ("location:../login.php");
 		} else {
@@ -41,6 +42,7 @@ if(isset($_POST["submit"])){
 	<div class="userinput">
 		<form id="register" method="post" action="register.php">
 			<ul>
+				<!-- Eingabefelder für den User -->
 				<li><input type="text" name="Uname" id="Uname" placeholder="Username" pattern="\w{1,20}.\w{1,20}@\w{0,20}.{0,1}ksh.ch"></li>
 				<li><input type="Password" name="pwd1" id="pwd1" placeholder="Passwort" pattern=".{4,20}"></li>
 				<li><input type="Password" name="pwd2" id="pw2" placeholder="Passwort wiederholen"></li>

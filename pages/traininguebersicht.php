@@ -20,7 +20,6 @@ verify_logged_in();
 	<button onclick="goBack()" class="back"><img src="../pictures/icon_back.png"></button>
 	<main>
 		<div class="overview">
-			<a class="information">Dauer • Anzahl Trainings</a>
 			<?php
 			include("datenbank.php");
 			$area = $_GET["area"];
@@ -28,11 +27,16 @@ verify_logged_in();
 			$intensitaet = $_GET["intensitaet"];
 
 			$result = look_up_training($area, $typ);
+			echo "<a class=\"information\">Dein Trainingsplan</a>";
+			//erstellt eine "unordered list"
 			echo "<ul>";
+			//Fügt die Trainingsnamen, welche zum "result" passen, in die "ul" ein.
 			foreach($result as $uebung){
 				echo "<li><a>" . $uebung["name"] . "</a></li>";
 			}
+			//schliesst die "ul"
 			echo "</ul>";
+			//Knopf, um das Training zu starten
 			echo "<a class=\"button\" href=\"training.php?area=" . $area . "&typ=" . $typ ."&intensitaet=" . $intensitaet . "\">Training beginnen</a>";
 			?>
 		</div>
@@ -41,6 +45,6 @@ verify_logged_in();
 		<a href="impressum.php">Impressum</a>
 		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
 	</footer>
-	 <script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

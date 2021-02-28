@@ -27,13 +27,13 @@ verify_logged_in();
 
 			<ul>
 				<?php
+				//nimmt auf, welche "area" (Bereich: bsp. Bauchmuskeln) und welcher "typ" (Trainingstyp: bsp. Kraft)
 				$area = $_GET["area"];
 				$typ = $_GET["typ"];
-
+				//Buttons zur Auswahl der Intensität
 				echo "<li><a href=\"traininguebersicht.php?typ=" . $typ . "&intensitaet=leicht&area=" . $area . "\">Leicht</a></li>";
 				echo "<li><a href=\"traininguebersicht.php?typ=" . $typ . "&intensitaet=mittel&area=" . $area . "\">Mittel</a></li>";
 				echo "<li><a href=\"traininguebersicht.php?typ=" . $typ . "&intensitaet=schwer&area=" . $area . "\">Schwer</a></li>";
-
 				?>
 			</ul>
 		</div>

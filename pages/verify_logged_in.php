@@ -1,6 +1,7 @@
 <?php
+//es wird überprüft, ob der User bereits angemeldet ist
 function verify_logged_in(){
-	//es wird überprüft, ob der User bereits angemeldet ist
+	//Session wird gestarted
 	session_start();
 
 	//ist der User nicht angemeldet, so wird er zur Login-Seite zurückgeschickt

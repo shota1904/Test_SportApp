@@ -155,7 +155,7 @@ i img{
 .active{
 	background: #BEBEBE
 }
-.selection{
+.selection, .admin{
 	background: #37A8FF;
 }
 .selection h1{
@@ -238,6 +238,9 @@ i img{
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
+.training_gif{
+	width: 80%;
+}
 .timer, .amount_exercise{
 	text-align: center;
 }
@@ -261,4 +264,14 @@ i img{
 	padding: 2% 0%;
 	justify-content: center;
 	text-align: center;
+}
+.content{
+	width: 95%;
+	background: white;
+	padding: 1%;
+}
+.center_content{
+	padding: 2% 0%;
+	justify-content: center;
+	display: flex;
 }

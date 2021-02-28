@@ -12,6 +12,7 @@ $intensitaet = $_GET["intensitaet"];
 //ruft Funktion auf, welche die Übungen zurückgibt
 $result = look_up_training($area, $typ);
 	
+//Übungen werden erst in die History eingetragen, da man das Training nicht abbrechen sollte
 foreach ($result as $value)
     insert_history_record($intensitaet, $value["id"]);
 ?>

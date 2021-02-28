@@ -6,7 +6,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$name = $_POST["Uname"];
 	$pwd = $_POST["Pass"];
-	//Überprüft ob das Feld Username oder das Feld Passwort leer sind
+	//Überprüft ob das Feld Username oder das Feld Passwort gefüllt sind
 	if (!empty($name) || !empty($pwd)) {	
 		$result = fetch_user_details($name);
 		//Wenn Username und Password richtig sind gelangt man auf die richtige Seite
@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!-- KSH-logo als Banner -->
 	<div id="banner">
 		<a>
 			<img class="logo" src="pictures/ksh_logo.png" alt="ksh_logo">
@@ -36,11 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<div class="userinput">
 		<form id="login" method="post" action="login.php">
 			<ul>
+				<!-- Eingabefelder für den User -->
 				<li><input type="text" name="Uname" id="Uname" placeholder="Username" pattern="\w{1,20}.\w{1,20}@\w{0,20}.{0,1}ksh.ch"></li>
 				<li><input type="Password" name="Pass" id="Pass" placeholder="Passwort" pattern=".{4,20}"></li>
 				<li><input type="submit" name="submit" class="log_button" value="Login"></li>
 			</ul>
 		</form>
+		<!-- Falls der User noch keinen Account hat -->
 		<div id="create_account">
 			<a href="pages/register.php">Ich besitze noch keinen Account. Hier registrieren</a>
 		</div>
@@ -50,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<p>Autoren: Damian Bühler, Patrick Höscheler, Shota Takahira</p>
 	</footer>
 </body>
-	
+	<!--
 <script>
 var input = document.getElementById("Pass");
 input.addEventListener("keyup", function(event) {
@@ -71,4 +74,5 @@ input.addEventListener("keyup", function(event) {
 
 
 </script>
+  -->
 </html>
